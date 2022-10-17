@@ -25,7 +25,7 @@ BASE STYLES
   h4,
   h5,
   h6 {
-    @apply text-neutral-700 dark:text-white font-extrabold mb-2
+    @apply text-neutral-900 dark:text-white font-extrabold mb-2
     transition-all duration-150 tracking-tight;
   }
   h1 {
@@ -47,9 +47,9 @@ BASE STYLES
     @apply text-sm font-semibold md:text-lg;
   }
   p {
-    @apply text-base text-neutral-600 dark:text-neutral-200;
+    @apply text-base text-neutral-800;
   }
   a {
-    @apply text-neutral-400 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-white;
+    @apply text-neutral-500 underline hover:text-neutral-900;
   }
 }

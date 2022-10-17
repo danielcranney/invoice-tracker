@@ -1,7 +1,8 @@
-import { connectToDatabase } from "../../lib/mongodb";
+import clientPromise from "../../lib/mongodb";
 
 export default async function handler(req, res) {
-  const { db } = await connectToDatabase();
+  const client = await clientPromise;
+  const db = client.db("spotlight");
   try {
     const invoiceInfo = await db
       .collection("invoiceData")
